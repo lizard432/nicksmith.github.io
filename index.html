@@ -1,0 +1,130 @@
+<html>
+  <title>Arkansas University - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0px;
+      background: url('https://collegevine.imgix.net/6482fe0f-d644-4e4e-91f3-1c24e9070db1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .bar {
+      display: flex;
+      background-color: #c41414;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 4px solid black;
+    }
+
+    .bar p {
+      padding: 10px 25px;
+      font-family: 'Bakersville', sans-serif;
+      font-size: 22px;
+      color: white;
+    }
+
+    h1 {
+      color: white;
+      text-align: left;
+      margin-right: auto;
+      padding: 10px 15px;
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 24px;
+    }
+
+    .bar p:hover {
+      background-color: #941010;
+    }
+
+    h2 {
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      color: black;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      color: black;
+      font-size: 28px;
+    }
+
+    .c {
+      background-color: rgba(235, 235, 235, 0.5);
+      border-radius: 10px;
+      border: 3px solid white;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      border-radius: 50%;
+      opacity: 1;
+      z-index: 2;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+      .bar p {
+        font-size: 18px;
+        padding: 10px 15px;
+      }
+      h2 {
+        font-size: 32px;
+      }
+      h3 {
+        font-size: 22px;
+      }
+      .logo {
+        width: 100px;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="bar">
+      <h1>Arkansas University</h1>
+      <p onclick="navHome()">Home</p>
+      <p onclick="navAdm()">Admissions</p>
+      <p onclick="navAc()">Academics</p>
+      <p onclick="navContact()">Contact Us</p>
+    </div>
+
+    <div class="c">
+      <h2>Dedicated to Arkansas<br>UNOFFICIAL WEBSITE</h2>
+      <h3>
+        Arkansas University offers<br />the best sports and<br />high quality
+        education.
+      </h3>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQumjxU2durmxadmszs1QI1Vi8N3cDSR1iaJ2nmmlK58a1nB91IcIXOQskSbkYmwfXq3zo&usqp=CAU"
+        class="logo"
+      />
+    </div>
+
+    <script>
+      function navHome() {
+        window.location.href = 'index.html';
+      }
+      function navAdm() {
+        window.location.href = 'admissions.html';
+      }
+      function navAc() {
+        window.location.href = 'academics.html';
+      }
+      function navContact() {
+        window.location.href = 'contact.html';
+      }
+    </script>
+  </body>
+</html>
